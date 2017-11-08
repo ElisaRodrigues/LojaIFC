@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--localhost/phpmyadmin/-->
+
 <head>
 
     <meta charset="utf-8">
@@ -86,7 +88,7 @@
 
 <!--Colocar os Scripts aq-->
 
-<script src="assets/vendor/jquery/jquery.min.js"/>]
+<script src="assets/vendor/jquery/jquery.min.js"/>
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js" />
 
 
