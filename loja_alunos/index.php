@@ -1,3 +1,10 @@
+<?php
+    require_once "classes/Produto.php";
+    $produtos = Produto::getProdutos();
+
+
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,11 +61,14 @@
 
 <!-- Page Content -->
 <div class="container">
+
     
     <!-- Page Features -->
     <div class="row text-center">
 
-            <div class="col-lg-3 col-md-6 mb-4">
+        <?php foreach ($listaProdutos as $produto) ?>
+        <!--inicia um produto -->
+            <div class="item-vitrine col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
@@ -71,6 +81,8 @@
                     </div>
                 </div>
             </div>
+        <!--fim .item-vitrine -->
+        <?php  ?>
 
     </div>
     <!-- /.row -->
