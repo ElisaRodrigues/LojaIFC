@@ -1,7 +1,8 @@
 <?php
-    require_once "classes/Produto.php";
-    $produtos = Produto::getProdutos();
+    require_once "classes/produto/CrudProdutos.php";
 
+    $crud = new CrudProdutos();
+    $listaProdutos = $crud->getProdutos();
 
     ?>
 
