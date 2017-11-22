@@ -22,3 +22,6 @@ require_once __DIR__. '/../conexao/Conexao.php';
         }
 
 }
+
+$x = new CrudProdutos();
+    $x->getProdutos();

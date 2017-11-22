@@ -1,10 +1,10 @@
 <?php
-    require_once "classes/produto/CrudProdutos.php";
+require_once "classes/produto/CrudProdutos.php";
 
-    $crud = new CrudProdutos();
-    $listaProdutos = $crud->getProdutos();
+$crud = new CrudProdutos();
+$listaProdutos = $crud->getProdutos();
 
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -63,12 +63,12 @@
 <!-- Page Content -->
 <div class="container">
 
-    
+
     <!-- Page Features -->
     <div class="row text-center">
 
         <?php foreach ($listaProdutos as $produto): ?>
-        <!--inicia um produto -->
+            <!--inicia um produto -->
             <div class="item-vitrine col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-        <!--fim .item-vitrine -->
+            <!--fim .item-vitrine -->
         <?php endforeach; ?>
 
     </div>
