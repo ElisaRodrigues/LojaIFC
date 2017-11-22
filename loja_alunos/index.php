@@ -67,23 +67,23 @@
     <!-- Page Features -->
     <div class="row text-center">
 
-        <?php foreach ($listaProdutos as $produto) ?>
+        <?php foreach ($listaProdutos as $produto): ?>
         <!--inicia um produto -->
             <div class="item-vitrine col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
-                        <h4 class="card-title">Título</h4>
-                        <p class="card-text">00.00</p>
+                        <h4 class="card-title"> <?= $produto['titulo'] ?> </h4>
+                        <p class="card-text"><?= $produto['preco'] ?></p>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-ifc">veja +</a>
+                        <a href="produto.php?codigo=? <?=  $produto['codigo']?>" class="btn btn-ifc">veja +</a>
                     </div>
                 </div>
             </div>
         <!--fim .item-vitrine -->
-        <?php  ?>
+        <?php endforeach; ?>
 
     </div>
     <!-- /.row -->
@@ -103,7 +103,6 @@
 
 <script src="assets/vendor/jquery/jquery.min.js"/>
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js" />
-
 
 </body>
 
